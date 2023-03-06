@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<title>KIUF - Bosh sahifa</title>
+	</head>
+	<style>
+		.suggest{
+			padding: 30px;
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+		
+		.form-input{
+			width: 40%;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+
+		.suggest-list{
+			border: 1px solid #374C91;
+			border-radius: 4px;
+			padding: 20px;
+			width: 40%;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 10px;
+			display: none;
+		}
+
+		.suggest__item{
+			display: grid;
+			grid-template-columns: 1fr;
+			color: #374C91;
+			padding: 5px;
+			cursor: pointer;
+		}
+
+		.suggest__item:hover{
+			background-color: rgba(55, 76, 145, 0.4);
+			border-radius: 4px;
+		}
+
+		.suggest_active{
+			display: block;
+		}
+
+		.suggest-selected{
+			padding: 20px;
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			gap: 20px;
+			border: 1px solid #374C91;
+			border-radius: 4px;
+			width: 100%;
+		}
+
+		.suggest-wrap{
+			background-color: #374C91;
+			color: #fff;
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			border-radius: 4px;
+		}
+		.suggest-selected__item{
+			color: #fff;
+			border: none;
+		}
+		
+		.suggest-selected__item:disabled{
+			background-color: #374C91;
+			border: none;
+		}
+
+		.suggest-x{
+			height: 10px;
+			width: 10px;
+			cursor: pointer;
+		}
+		.suggest-x:hover{
+			opacity: 0.7;
+		}
+
+
+
+	</style>
+	<body>
+
+
+		<div class="suggest">
+			<input id="form-type" class="form-input" type="text">
+			<ul class="suggest-list">
+				<li class="suggest__item">Lorem, ipsum.</li>
+				<li class="suggest__item">Lorem, ipsum.</li>
+				<li class="suggest__item">Lorem, ipsum.</li>
+				<li class="suggest__item">Lorem, ipsum.</li>
+				<li class="suggest__item">Lorem, ipsum.</li>
+			</ul>
+			<form method="POST" class="suggest-selected">
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+					<div class="suggest-wrap"><input name="suggest-item" class="suggest-selected__item" value="Lorem, ipsum." disabled><img src="images/cancel.svg" class="suggest-x"></div>
+			</form>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="js/libs.min.js"></script>
+			<script src="js/script.js"></script>
+	
+	
+				</body>
+				</html>
+		<!-- == MODAL == -->
+
+		<!-- modal_active klassi qo'shilsa modal paydo bo'ladi -->
+
+		<div id="modal" class="modal">
+			<form class="modal__item" method="POST">
+				<span id="close" class="close">
+					<img src="images/x-button.svg" alt="x">
+				</span>
+				<div class="modal-box">
+					<select class="form-input" disabled="">
+						<option selected disabled value=""></option>
+						<option>Option - 1</option>
+						<option>Option - 2</option>
+						<option>Option - 3</option>
+					</select>
+					<select class="form-input">
+						<option selected disabled value=""></option>
+						<option>Option - 1</option>
+						<option>Option - 2</option>
+						<option>Option - 3</option>
+					</select>
+
+				</div>
+				<div class="modal-box">
+					<input class="form-input" type="date">
+					<input class="form-input" type="time">
+				</div>
+				<div class="modal-box modal-box_end">
+					<a class="btn btn_blue" href="#">Export</a>
+					<button type="button" id="close-modal" class="btn">Cancel</button>
+				</div>
+			</form>
+  </div>
+
+		<!--/ == MODAL == -->
+
+
+
+
+
+		<!-- == SELECT == -->
+
+		<!-- <div id="myselect">
+			<select class="form-input" id="multiselect" name="others[]" multiple="multiple">
+				<option value="1" selected>HTML</option>
+				<option value="2" selected>CSS</option>
+				<option value="3">MySql</option>
+				<option value="4">XML</option>
+				<option value="5">JSON</option>
+				<option value="6">YAML</option>
+				<option value="7">MongoDB</option>
+				<option value="8">SQLite</option>
+			</select>
+		</div> -->
+
+		<!-- == /SELECT == -->
+

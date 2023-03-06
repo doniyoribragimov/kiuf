@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <title>TILLAR TIZIMI </title>
+</head>
+<body class="body">
+  <section class="navbar">
+    <div class="navbar-btn">
+      <div class="navbar-btn__item"></div>
+      <div class="navbar-btn__item"></div>
+      <div class="navbar-btn__item"></div>
+    </div>
+    <img class="navbar-close" src="images/x-button.svg" alt="close">
+    <div class="profile">
+      <img src="images/man.jpg" alt="profile photo">
+      <span>Bektayev Asadbek</span>
+    </div>
+    <ul class="navbar-list">
+      <li>
+        <a class="navbar__item  " href="application.html">
+        <img src="images/navbar-1.svg" alt="navbar icon">
+        <span>Tushgan arizalar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="stats.html">
+        <img src="images/navbar-2.svg" alt="navbar icon">
+        <span>Statistika</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="news-table.html">
+        <img src="images/navbar-3.svg" alt="navbar icon">
+        <span>Yangliklar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="admin-table.html">
+        <img src="images/navbar-4.svg" alt="navbar icon">
+        <span>Adminlar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="#">
+        <img src="images/navbar-5.svg" alt="navbar icon">
+        <span>Kredentsiyalar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="#">
+        <img src="images/navbar-6.svg" alt="navbar icon">
+        <span>Tushumlar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="bank.html">
+        <img src="images/navbar-7.svg" alt="navbar icon">
+        <span>Bank ma’lumotlari</span>
+      </a>
+    </li>
+    </ul>
+  </section>
+  
+  <div class="wrapper">
+    <div class="out-content">
+      <ul class="language">
+        <li class="language__item">
+          <a href="#"><img src="images/uzb.png" alt="language img"></a>
+        </li>
+        <li class="language__item">
+          <a href="#"><img src="images/korea.png" alt="language img"></a>
+        </li>
+      </ul>
+      <a class="btn_green" href="#">Chiqish</a>
+    </div>
+    <!-- OUT CONTENT -->
+
+    <!-- ALERT -->
+    <section class="alert alert-main">
+        <h1 class="alert__title">TILLAR TIZIMI</h1>
+        <a class="alert__link" href="index.html">BOSH SAHIFA</a>
+        <span class="alert__link alert__link_active">TILLAR TIZIMI</span>
+      </section>
+
+      <div class="admin-content kiuf bottom-space">
+        <div class="admin-config admin-filter">
+            <div class="admin-top admin-top-fakultet">
+            </div>
+            <ul class="admin-list list-language admin-bold">
+                <li id="admin-all-checkbox" class="admin-list__item"></li>
+                <li class="admin-list__item">ID</li>
+                <li class="admin-list__item">Nomi</li>
+                <li class="admin-list__item">Kodi</li>
+                <li class="admin-list__item">Asosiy til</li>
+                <li class="admin-list__item">Faollashtirish</li>
+                </li>
+              </ul>
+          </div>
+            <ul class="admin-list admin-shadow list-language">
+                <li class="admin-list__item"></li>
+                <li class="admin-list__item">
+                  <input class="admin-input admin-id" name="admin-id" type="text">
+                </li>
+                <li class="admin-list__item">
+                  <select class="admin-input language-name" name="language-name">
+                    <option value="" selected disabled></option>
+                    <option>Uzbek</option>
+                    <option>Russian	</option>
+                    <option>English	</option>
+                    <option>Korean	</option>
+                  </select>
+                </li>
+                <li class="admin-list__item">
+                  <input class="admin-input language-code" name="language-code" type="text">
+                </li>
+                <li class="admin-list__item">
+                  <select class="admin-input language-main" name="language-main">
+                    <option value="" selected disabled></option>
+                    <option>Ha</option>
+                    <option>Yo’q</option>
+                  </select>
+                </li>
+                <li class="admin-list__item">
+                  <select class="admin-input language-active" name="language-active">
+                    <option value="" selected disabled></option>
+                    <option>Ha</option>
+                    <option>Yo’q</option>
+                  </select>
+                </li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            <!-- ITEMS  -->
+            <ul class="admin-list list-language admin-shadow">
+              <li class="admin-list__item">
+                <img class="admin-flag" src="images/uzb.png" alt="flag">
+              </li>
+              <li class="admin-list__item">1</li>
+              <li class="admin-list__item">Uzbek</li>
+              <li class="admin-list__item">uz</li>
+              <li class="admin-list__item">Ha
+              </li>
+              <li class="admin-list__item">Ha
+              </li>
+              <li class="admin-list__item etc-dots">
+                <ul class="edit">
+                  <li class="edit__item">
+                    <img src="images/dropdown-edit.svg" alt="edit icon">
+                  <a href="#">Tahrirlash</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/dropdown-delete.svg" alt="edit icon">
+                  <a href="#">O'chirish</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/qabul.svg" alt="edit icon">
+                  <a href="#">Qabul qilindi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/tolov.svg" alt="edit icon">
+                  <a href="#">To'lov qildi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/hujjat.svg" alt="edit icon">
+                  <a href="#">Hujjat qabul qilindi</a>
+                  </li>
+                </ul>
+              </li> 
+            </ul>
+         
+            <ul class="admin-list list-language admin-shadow">
+              <li class="admin-list__item">
+                <img class="admin-flag" src="images/rus.svg" alt="flag">
+              </li>
+              <li class="admin-list__item">2</li>
+              <li class="admin-list__item">Russian	</li>
+              <li class="admin-list__item">ru</li>
+              <li class="admin-list__item">Yo’q
+              </li>
+              <li class="admin-list__item">Yo’q
+              </li>
+              <li class="admin-list__item etc-dots">
+                <ul class="edit">
+                  <li class="edit__item">
+                    <img src="images/dropdown-edit.svg" alt="edit icon">
+                  <a href="#">Tahrirlash</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/dropdown-delete.svg" alt="edit icon">
+                  <a href="#">O'chirish</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/qabul.svg" alt="edit icon">
+                  <a href="#">Qabul qilindi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/tolov.svg" alt="edit icon">
+                  <a href="#">To'lov qildi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/hujjat.svg" alt="edit icon">
+                  <a href="#">Hujjat qabul qilindi</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="admin-list list-language admin-shadow">
+              <li class="admin-list__item">
+                <img class="admin-flag" src="images/usa.svg" alt="flag">
+              </li>
+              <li class="admin-list__item">3</li>
+              <li class="admin-list__item">English</li>
+              <li class="admin-list__item">en</li>
+              <li class="admin-list__item">Yo’q
+              </li>
+              <li class="admin-list__item">Ha
+              </li>
+              <li class="admin-list__item etc-dots">
+                <ul class="edit">
+                  <li class="edit__item">
+                    <img src="images/dropdown-edit.svg" alt="edit icon">
+                  <a href="#">Tahrirlash</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/dropdown-delete.svg" alt="edit icon">
+                  <a href="#">O'chirish</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/qabul.svg" alt="edit icon">
+                  <a href="#">Qabul qilindi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/tolov.svg" alt="edit icon">
+                  <a href="#">To'lov qildi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/hujjat.svg" alt="edit icon">
+                  <a href="#">Hujjat qabul qilindi</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="admin-list list-language admin-shadow">
+              <li class="admin-list__item">
+                <img class="admin-flag" src="images/korea.png" alt="flag">
+              </li>
+              <li class="admin-list__item">4</li>
+              <li class="admin-list__item">Korean</li>
+              <li class="admin-list__item">kor</li>
+              <li class="admin-list__item">Yo’q
+              </li>
+              <li class="admin-list__item">Ha
+              </li>
+              <li class="admin-list__item etc-dots">
+                <ul class="edit">
+                  <li class="edit__item">
+                    <img src="images/dropdown-edit.svg" alt="edit icon">
+                  <a href="#">Tahrirlash</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/dropdown-delete.svg" alt="edit icon">
+                  <a href="#">O'chirish</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/qabul.svg" alt="edit icon">
+                  <a href="#">Qabul qilindi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/tolov.svg" alt="edit icon">
+                  <a href="#">To'lov qildi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/hujjat.svg" alt="edit icon">
+                  <a href="#">Hujjat qabul qilindi</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!-- ITEM END -->
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <title>Admin kiritish</title>
+</head>
+<body class="body">
+  <section class="navbar ">
+    <div class="navbar-btn">
+      <div class="navbar-btn__item"></div>
+      <div class="navbar-btn__item"></div>
+      <div class="navbar-btn__item"></div>
+    </div>
+    <img class="navbar-close" src="images/x-button.svg" alt="close">
+    <div class="profile">
+      <img src="images/man.jpg" alt="profile photo">
+      <span>Bektayev Asadbek</span>
+    </div>
+    <ul class="navbar-list">
+      <li>
+        <a class="navbar__item" href="application.html">
+        <img src="images/navbar-1.svg" alt="navbar icon">
+        <span>Tushgan arizalar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="stats.html">
+        <img src="images/navbar-2.svg" alt="navbar icon">
+        <span>Statistika</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="news-table.html">
+        <img src="images/navbar-3.svg" alt="navbar icon">
+        <span>Yangliklar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="admin-table.html">
+        <img src="images/navbar-4.svg" alt="navbar icon">
+        <span>Adminlar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="#">
+        <img src="images/navbar-5.svg" alt="navbar icon">
+        <span>Kredentsiyalar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="#">
+        <img src="images/navbar-6.svg" alt="navbar icon">
+        <span>Tushumlar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="bank.html">
+        <img src="images/navbar-7.svg" alt="navbar icon">
+        <span>Bank ma’lumotlari</span>
+      </a>
+    </li>
+    </ul>
+  </section>
+  
+  <div class="wrapper kiuf">
+    <div class="out-content">
+      <ul class="language">
+        <li class="language__item">
+          <a href="#"><img src="images/uzb.png" alt="language img"></a>
+        </li>
+        <li class="language__item">
+          <a href="#"><img src="images/korea.png" alt="language img"></a>
+        </li>
+      </ul>
+      <a class="btn_green" href="#">Chiqish</a>
+    </div>
+    <!-- OUT CONTENT -->
+    
+    <section class="alert alert-main">
+      <h1 class="alert__title">QO’SHISH</h1>
+      <a class="alert__link" href="admin-table.html">ADMINLAR RO’YHATIGA QAYTISH</a>
+				<span class="alert__link alert__link_active">ADMINLAR Kiritish</span>
+    </section>
+
+    <form class="admin-enter bottom-space">
+      <input class="admin-enter__input" name="admin-fullname" type="text" placeholder="F.I.SH.">
+      <select class="admin-enter__input" name="admin-fakultet">
+        <option value="" disabled selected>Falultetlar</option>
+        <option>Maktabgacha ta'lim</option>
+        <option>Turizm menejmenti</option>
+        <option>Menejment va kompyuterlashtirilgan buxgalteriya hisobi</option>
+        <option>Mashinasozlik muhandisligi</option>
+      </select>
+      <input class="admin-enter__input" name="admin-login" type="text" placeholder="Login">  
+      <input class="admin-enter__input" name="admin-password" type="password" placeholder="Parol">  
+
+      <div class="admin-enter-btns">
+        <button class="admin-enter__btn" type="submit">Saqlash</button>
+        <button class="admin-enter__btn admin-enter__btn_green" type="submit">Bekor qilish</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

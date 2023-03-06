@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<title>TAHRIRLASH</title>
+	</head>
+	<body>
+    <section class="navbar">
+      <div class="navbar-btn">
+        <div class="navbar-btn__item"></div>
+        <div class="navbar-btn__item"></div>
+        <div class="navbar-btn__item"></div>
+      </div>
+      <img class="navbar-close" src="images/x-button.svg" alt="close">
+      <div class="profile">
+        <img src="images/man.jpg" alt="profile photo">
+        <span>Bektayev Asadbek</span>
+      </div>
+      <ul class="navbar-list">
+        <li>
+          <a class="navbar__item  " href="application.html">
+          <img src="images/navbar-1.svg" alt="navbar icon">
+          <span>Tushgan arizalar</span>
+        </a>
+      </li>
+       <li>
+          <a class="navbar__item" href="stats.html">
+          <img src="images/navbar-2.svg" alt="navbar icon">
+          <span>Statistika</span>
+        </a>
+      </li>
+       <li>
+          <a class="navbar__item" href="news-table.html">
+          <img src="images/navbar-3.svg" alt="navbar icon">
+          <span>Yangliklar</span>
+        </a>
+      </li>
+       <li>
+          <a class="navbar__item" href="admin-table.html">
+          <img src="images/navbar-4.svg" alt="navbar icon">
+          <span>Adminlar</span>
+        </a>
+      </li>
+       <li>
+          <a class="navbar__item" href="#">
+          <img src="images/navbar-5.svg" alt="navbar icon">
+          <span>Kredentsiyalar</span>
+        </a>
+      </li>
+       <li>
+          <a class="navbar__item" href="#">
+          <img src="images/navbar-6.svg" alt="navbar icon">
+          <span>Tushumlar</span>
+        </a>
+      </li>
+       <li>
+          <a class="navbar__item" href="bank.html">
+          <img src="images/navbar-7.svg" alt="navbar icon">
+          <span>Bank ma’lumotlari</span>
+        </a>
+      </li>
+      </ul>
+    </section>
+		<div class="wrapper">
+       <div class="out-content">
+      <ul class="language">
+        <li class="language__item">
+          <a href="#"><img src="images/uzb.png" alt="language img"></a>
+        </li>
+        <li class="language__item">
+          <a href="#"><img src="images/korea.png" alt="language img"></a>
+        </li>
+      </ul>
+      <a class="btn_green" href="#">Chiqish</a>
+    </div>
+    <!-- OUT CONTENT -->
+    <section class="alert alert-main">
+      <h1 class="alert__title">TAHRIRLASH</h1>
+      <a class="alert__link" href="users.html">TALABALAR RO’YHATIGA QAYTISH</a>
+				<span class="alert__link alert__link_active">TAHRIRLASH</span>
+    </section>
+
+    <!-- QABUL/TO'LOV -->
+
+    <!-- 
+
+recieve__item_success -> muvafaqqiyatli (ko'k stil)
+recieve__item_fail -> muvafaqqiyatsiz (qizil stil)
+
+     -->
+
+    <div class="recieve">
+      <span class="recieve__item recieve__item_success"> <img src="images/green-dot.svg" alt="green dot"> Hujjat qabul qilindi</span>
+      <span class="recieve__item"> <img src="images/green-dot.svg" alt="green dot"> To’lov qabul qilindi</span>
+    </div>
+
+    <!-- QABUL/TO'LOV -->
+
+    <form class="edit-section form kiuf" action="#" method="POST" >
+      <section class="form-first">
+        <main class="form-first__item first">
+          <h4 class="form-title">ABITURENT HAQIDA MA’LUMOT</h4>
+          <!-- form content -->
+          <label class="form-label" for="name">
+            Ismi
+          </label>
+          <input id="name" class="form-input" type="text" name="name" placeholder="Sizning ismingiz" required>
+
+          <label class="form-label" for="surname">
+            Familiyasi
+          </label>
+          <input id="surname" class="form-input" type="text" name="surname" placeholder="Sizning familiyangiz" required>
+
+          <label class="form-label" for="father-name">
+            Otasini ismi
+          </label>
+          <input id="father-name" class="form-input" type="text" name="father-name" placeholder="Otangizning ismi" required>
+
+          <label class="form-label" for="birthday">
+            Tug’ilgan sanasi
+          </label>
+          <input id="birthday" class="form-input" type="date" name="birthday" value="2021-12-02" required>
+
+          <label class="form-label" for="nation">
+            Millati
+          </label>
+          <select id="nation" class="form-input" name="nation" required>
+            <option value="" disabled selected>Sizning millatingiz</option>
+            <option value="O'zbek">O'zbek</option>
+            <option value="Rus">Rus</option>
+            <option value="Tojik">Tojik</option>
+          </select>
+
+        </main>
+        <aside class="form-first__item second">
+          <h4 class="form-title">ABITURENT PASSPORT MA’LUMOT</h4>
+
+          <label class="form-label" for="id">Pasport seriasi va raqami</label>
+          <input id="id" class="form-input" type="text" name="id" placeholder="AA 123456" required>
+          <div class="form-file">
+            <div class="form-file__item">
+              <label class="form-label" for="id-card">Passport nusxasi</label>
+              <input id="id-card" class="btn form-btn" name="id-card" type="file" multiple>
+              <button type="button" class="passport-input btn">+Yuklash</button>
+            </div>
+            <div class="form-file__item">
+              <label class="form-label" for="photo">Rasm 3,5 x 4,5</label>
+              <input id="photo" class="btn form-btn" name="photo" type="file" multiple>
+              <button class="photo-input btn">+Yuklash</button>
+            </div>
+          </div>
+          <label class="form-label" for="address">Yashash manzili</label>
+          <input id="address" class="form-input" name="address" type="text" placeholder="Sizning yashash manzilingiz" required>
+
+          <label class="form-label" for="mahalla">Yashash mahallasi</label>
+          <input id="mahalla" class="form-input" type="text" name="mahalla" placeholder="Sizning yashash mahallangiz" required>
+
+
+          <label class="form-label" for="region">Yashash tumani</label>
+          <select id="region" class="form-input" name="region" required>
+            <option value="" disabled selected>Sizning yashash tumaningiz</option>
+            <option value="Fergana">Farg'ona</option>
+            <option value="Andijan">Andijon</option>
+            <option value="Namangan">Namangan</option>
+          </select>
+
+          <label class="form-label" for="phone-number">Telefon nomer</label>
+          <input id="phone-number" class="form-input" name="phone-number" type="tel" placeholder="Sizning telefon nomeringiz" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          minlength="13" maxlength="13" required>
+        </aside>
+        <div class="form-first__item photo">
+          <img class="form-img" src="images/img-example.webp" alt="form img">
+        </div>
+      </section>
+      <section class="form__item form-second">
+        <h4 class="form-title">ABITURENT TUGATGAN O’QUV YURTI</h4>
+        <div class="form-content">
+          <div class="form-content__first">
+            <div class="form-content__box">
+              <label class="form-label" for="ended-place">Yashash tumani</label>
+              <select id="ended-place" class="form-input" name="ended-place" required>
+                <option value="" disabled selected>Sizning tugatgan o’quv yurtingizni tanlang</option>
+                <option value="FarDU">FarDU</option>
+                <option value="ToshDU">ToshDU</option>
+                <option value="TATU">TATU</option>
+              </select>
+            </div>
+          <div class="form-content__box">
+            <label for="ended-year" class="form-label" for="phone-number">Tamomlagan yili</label>
+            <input id="ended-year" class="form-input number-type" name="ended-year" type="text" placeholder="Tamomlagan yilingiz"
+            minlength="4" maxlength="4" required>
+          </div>
+          </div>
+          <div class="form-content__second">
+            <label class="form-label">Ilovada o’rtacha olgan baho
+              <input class="form-input number-type" name="average-grade" type="text" placeholder="Ilovadagi olgan baholaringiz">
+            </label>
+
+            <label class="form-label">5 baholar soni
+              <input class="form-input number-type" name="5" type="text" placeholder="Sizning  5 baholaringiz">
+            </label>
+
+            <label class="form-label">4 baholar soni
+              <input class="form-input number-type" name="4" type="text" placeholder="Sizning 4 baholaringiz">
+            </label>
+
+            <label class="form-label">3 baholar soni
+              <input class="form-input number-type" name="3" type="text" placeholder="Sizning 3 baholaringiz ">
+            </label>
+          </div>
+          <div class="form-content__third form-file">
+            <div class="form-file__item">
+              <label class="form-label" for="diplom">Diplom va ilovani yuklash</label>
+              <input id="diplom" class="btn form-btn fileInput" name="diplom" type="file" multiple>
+              <button class="diplom-input btn">+Yuklash</button>
+            </div>
+
+          <div class="form-content__third-item">
+            <div class="form-file__item">
+              <label class="form-label" for="language-class">Til darajangiz</label>
+              <select id="language-class" class="form-input" name="language-class" required>
+                <option value="" disabled selected>Til darajangizni kiriting</option>
+                <option>IELTS</option>
+                <option>Topic</option>
+              </select>
+            </div>
+
+            <div class="form-file__item">
+              <label for="language-ball" class="form-label" for="language-ball">IELTS / Topic ball</label>
+              <input id="language-ball" class="form-input number-type" name="language-ball" type="text" placeholder="IELTS/Topic ball" maxlength="3" required>
+            </div>
+
+            <div class="form-file__item">
+              <label class="form-label" for="language-upload">IELTS / Topic yuklash</label>
+              <input id="language-upload" class="btn form-btn fileInput" name="language-upload" type="file" multiple>
+              <button class="language-input btn">+Yuklash</button>
+            </div>
+          </div>
+          <div class="form-images">
+            <img src="images/diplom.jpg" alt="diplom">
+            <img src="images/diplom.jpg" alt="diplom">
+            <img src="images/ilova.png" alt="ilova">
+            <img src="images/ilova.png" alt="ilova">
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="form__item form-third">
+        <h4 class="form-title">ABITURENT TANLAGAN YO’NALISH</h4>
+        <div class="form-third__wrapper">
+        <div class="form-third__item">
+          <label class="form-label" for="fakultet">Yo’nalishingizni tanlang</label>
+          <select id="fakultet" class="form-input" name="fakultet" required>
+            <option value="" disabled selected></option>
+            <option value="" disabled>Texnik muhandislik yo’nalishilar</option>
+            <option>Internet va axborot-kommunikatsiya fakulteti</option>
+            <option>Arxitektura muhandisligi fakulteti</option>
+            <option>Qurilish mubandisligi fakulteti</option>
+            <option>Elektrotexnika va elektronika muhandisligi fakulteti</option>
+            <option>Mashinasozlik muhandisligi fakulteti</option>
+            <option>Energetika va kimyo muhandisligi fakulteti
+            </option>
+            <option value="" disabled>Ijtimoiy gumanitar yo’nalishlar</option>
+            <option>Koreys tili fakulteti</option>
+            <option>Menejment va kompyuterlashtirilgan buxgalteriya hisobi fakulteti</option>
+            <option>Maktabgacha ta'lim fakulteti</option>
+            <option>Turizm menejmenti fakulteti</option>
+            <option>Xalqaro savdo fakulteti</option>
+            <option>Ingliz tili va adabiyoti fakulteti</option>
+          </select>
+        </div>
+        </div>
+      </section>
+
+     
+
+
+      <section class="form-end">
+        <h4 class="form-title">HUJATLARNI QABUL QILISH UCHUN TO’LOV USULI </h4>
+        <div class="change">
+         <div class="change__item">
+          <h3 class="change-title">Hujjat holati:</h3>
+          <span class="change-btn change-btn_green">Hujjat qabul qilindi</span>
+          <span class="change-btn change-btn_red">Hujjat qabul qilinmadi</span>
+         </div>
+        <div class="change__item">
+          <h3 class="change-title">To’lov holati:</h3>
+          <span class="change-btn change-btn_yellow">Hujjat qabul qilindi</span>
+          <span class="change-btn change-btn_black">Hujjat qabul qilinmadi</span>
+          <span class="change-payment">Payme yoki bank orqali:  150 000 so’m</div>
+        </div>
+        <div class="change__item change__item_comment">
+          <textarea class="change-comment" name="comment" placeholder="Comment yozing"></textarea>
+          <button type="submit" class="change-submit">Jo’natish</button>
+
+          <!-- QABUL QILINMADI -->
+          
+          <!-- <p class="fail">
+            Sizning to’lovongiz qabul qilinmadi sababi hisobingizda yetarli mablag’ mavjud emas!
+          </p> -->
+
+          <!-- QABUL QILINMADI -->
+        </div>
+        </div>
+        </label>
+      </section>
+    </form>
+    
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>

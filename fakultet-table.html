@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <title>FAKULTETLAR</title>
+</head>
+<body class="body">
+  <section class="navbar">
+    <div class="navbar-btn">
+      <div class="navbar-btn__item"></div>
+      <div class="navbar-btn__item"></div>
+      <div class="navbar-btn__item"></div>
+    </div>
+    <img class="navbar-close" src="images/x-button.svg" alt="close">
+    <div class="profile">
+      <img src="images/man.jpg" alt="profile photo">
+      <span>Bektayev Asadbek</span>
+    </div>
+    <ul class="navbar-list">
+      <li>
+        <a class="navbar__item  " href="application.html">
+        <img src="images/navbar-1.svg" alt="navbar icon">
+        <span>Tushgan arizalar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="stats.html">
+        <img src="images/navbar-2.svg" alt="navbar icon">
+        <span>Statistika</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="news-table.html">
+        <img src="images/navbar-3.svg" alt="navbar icon">
+        <span>Yangliklar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="admin-table.html">
+        <img src="images/navbar-4.svg" alt="navbar icon">
+        <span>Adminlar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="#">
+        <img src="images/navbar-5.svg" alt="navbar icon">
+        <span>Kredentsiyalar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="#">
+        <img src="images/navbar-6.svg" alt="navbar icon">
+        <span>Tushumlar</span>
+      </a>
+    </li>
+     <li>
+        <a class="navbar__item" href="bank.html">
+        <img src="images/navbar-7.svg" alt="navbar icon">
+        <span>Bank ma’lumotlari</span>
+      </a>
+    </li>
+    </ul>
+  </section>
+  
+  <div class="wrapper">
+    <div class="out-content">
+      <ul class="language">
+        <li class="language__item">
+          <a href="#"><img src="images/uzb.png" alt="language img"></a>
+        </li>
+        <li class="language__item">
+          <a href="#"><img src="images/korea.png" alt="language img"></a>
+        </li>
+      </ul>
+      <a class="btn_green" href="#">Chiqish</a>
+    </div>
+    <!-- OUT CONTENT -->
+
+    <!-- ALERT -->
+    <section class="alert alert-main">
+        <h1 class="alert__title">FAKULTETLAR</h1>
+        <a class="alert__link" href="index.html">BOSH SAHIFA</a>
+        <span class="alert__link alert__link_active">FAKULTETLAR</span>
+      </section>
+
+      <div class="admin-content kiuf bottom-space">
+        <div class="admin-config admin-filter">
+            <div class="admin-top admin-top-fakultet">
+                <div class="admin-edit">
+                <a class="admin-plus admin-plus-mini input-grey" href="#"><span>+</span> Yaratish</a>
+                </div>
+                <div class="parts-number">
+                    <label for="number">Ko'rsatish</label>
+                <input id="number" class="parts-number input-grey" type="number" value="10">
+                </div>
+            </div>
+            <ul class="admin-list admin-list-fakultet admin-bold">
+                <li id="admin-all-checkbox" class="admin-list__item"><input class="admin-input" type="checkbox" value="id"></li>
+                <li class="admin-list__item">№</li>
+                <li class="admin-list__item">ID</li>
+                <li class="admin-list__item">Kurslar</li>
+                <li class="admin-list__item">Nomi</li>
+                <li class="admin-list__item">Fanlar</li>
+                <li class="admin-list__item">Sana</li>
+                <li class="admin-list__item">Yanglilash</li>
+                <li class="admin-list__item"></ul>
+                </li>
+              </ul>
+          </div>
+            <ul class="admin-list admin-shadow admin-list-fakultet">
+                <li class="admin-list__item"></li>
+                <li class="admin-list__item">
+                  <input class="admin-input admin-id" name="admin-id" type="text">
+                </li>
+                <li class="admin-list__item">
+                    <input class="admin-input admin-id" name="admin-id" type="text">
+                  </li>
+                  <li class="admin-list__item">
+                    <input class="admin-input admin-kurs" name="admin-id" type="text">
+                  </li>
+                <li class="admin-list__item">
+                  <select class="admin-input" name="admin-religion">
+                    <option value="" selected disabled></option>
+                    <option>Energetika va kimyo muhandisligi	
+                    </option>
+                    <option>Internet va axborot-kommunikatsiya	
+                    </option>
+                    <option>Arxitektura muhandisligi	
+                    </option>
+                    <option>Qurilish muhandisligi	
+                    </option>
+                  </select>
+                </li>
+                <li class="admin-list__item">
+                    <input class="admin-input admin-fakultet" name="admin-id" type="text">
+                  </li>
+                  <li class="admin-list__item">
+                    <input class="admin-input admin-fakultet-mini" name="admin-id" type="text">
+                  </li>
+                  <li class="admin-list__item">
+                    <input class="admin-input admin-fakultet-mini" name="admin-id" type="text">
+                  </li>
+                  <li class="admin-list__item etc-dots">
+                    <ul class="edit">
+                      <li class="edit__item">
+                        <img src="images/dropdown-edit.svg" alt="edit icon">
+                      <a href="#">Tahrirlash</a>
+                      </li>
+                      <li class="edit__item">
+                        <img src="images/dropdown-delete.svg" alt="edit icon">
+                      <a href="#">O'chirish</a>
+                      </li>
+                      <li class="edit__item">
+                        <img src="images/qabul.svg" alt="edit icon">
+                      <a href="#">Qabul qilindi</a>
+                      </li>
+                      <li class="edit__item">
+                        <img src="images/tolov.svg" alt="edit icon">
+                      <a href="#">To'lov qildi</a>
+                      </li>
+                      <li class="edit__item">
+                        <img src="images/hujjat.svg" alt="edit icon">
+                      <a href="#">Hujjat qabul qilindi</a>
+                      </li>
+                    </ul>
+                  </li>
+              </ul>
+            <!-- ITEMS  -->
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+              <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+              <li class="admin-list__item">1</li>
+              <li class="admin-list__item">1</li>
+              <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+              <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+              <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+              <li class="admin-list__item">21.02.2020 04:58	</li>
+              <li class="admin-list__item">21.02.2020 04:58		</li>
+              <li class="admin-list__item etc-dots">
+                <ul class="edit">
+                  <li class="edit__item">
+                    <img src="images/dropdown-edit.svg" alt="edit icon">
+                  <a href="#">Tahrirlash</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/dropdown-delete.svg" alt="edit icon">
+                  <a href="#">O'chirish</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/qabul.svg" alt="edit icon">
+                  <a href="#">Qabul qilindi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/tolov.svg" alt="edit icon">
+                  <a href="#">To'lov qildi</a>
+                  </li>
+                  <li class="edit__item">
+                    <img src="images/hujjat.svg" alt="edit icon">
+                  <a href="#">Hujjat qabul qilindi</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">2</li>
+                <li class="admin-list__item">2</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">3</li>
+                <li class="admin-list__item">3</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">4</li>
+                <li class="admin-list__item">4</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">5</li>
+                <li class="admin-list__item">5</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">6</li>
+                <li class="admin-list__item">6</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">7</li>
+                <li class="admin-list__item">7</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">8</li>
+                <li class="admin-list__item">8</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">9</li>
+                <li class="admin-list__item">9</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="admin-list admin-list-fakultet admin-shadow">
+                <li class="admin-list__item"><input class="admin-input admin-checkbox" type="checkbox" value="id"></li>
+                <li class="admin-list__item">10</li>
+                <li class="admin-list__item">10</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi	</li>
+                <li class="admin-list__item">Energetika va kimyo muhandisligi	</li>
+                <li class="admin-list__item">Texnik muhandislik fanlar yo’nalishi		</li>
+                <li class="admin-list__item">21.02.2020 04:58	</li>
+                <li class="admin-list__item">21.02.2020 04:58		</li>
+                <li class="admin-list__item etc-dots">
+                  <ul class="edit">
+                    <li class="edit__item">
+                      <img src="images/dropdown-edit.svg" alt="edit icon">
+                    <a href="#">Tahrirlash</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/dropdown-delete.svg" alt="edit icon">
+                    <a href="#">O'chirish</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/qabul.svg" alt="edit icon">
+                    <a href="#">Qabul qilindi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/tolov.svg" alt="edit icon">
+                    <a href="#">To'lov qildi</a>
+                    </li>
+                    <li class="edit__item">
+                      <img src="images/hujjat.svg" alt="edit icon">
+                    <a href="#">Hujjat qabul qilindi</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            <!-- ITEM END -->
+      </div>
+      <div class="pagination">
+        <a class="pagination__item" href="#"><img src="images/pagination-arrow-left.svg" alt="pagination icon"></a>
+        <a class="pagination__item pagination__item_active" href="#">1</a>
+        <a class="pagination__item" href="#">2</a>
+        <a class="pagination__item" href="#">3</a>
+        <a class="pagination__item" href="#">4</a>
+        <a class="pagination__item" href="#">5</a>
+        <a class="pagination__item" href="#">6</a>
+        <a class="pagination__item" href="#">7</a>
+        <a class="pagination__item" href="#">8</a>
+        <a class="pagination__item" href="#">9</a>
+        <a class="pagination__item" href="#">10</a>
+        <a class="pagination__item" href="#"><img src="images/pagination-arrow-right.svg" alt="pagination icon"></a>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
